@@ -33,3 +33,4 @@ create policy "users can delete own books"
   on public.books for delete 
   to authenticated 
   using (auth.uid() = user_id);
+
